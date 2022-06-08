@@ -3,18 +3,20 @@ import styled from "styled-components";
 const HeaderContainer = styled.section`
   width: 100%;
   display: flex;
+  font-family: "Independence_hall";
+  color: white;
+  opacity: 0.8;
 `;
 const Title = styled.h1`
-  color: black;
-  font-size: 80px;
-  margin: 0;
+  width: 70%;
+  font-size: 60px;
+  margin: 10px 0 0 10px;
 `;
 const TodayDate = styled.div`
   font-size: 50px;
   height: 100%;
-  border: solid 1px black;
+  width: 30%;
   margin-top: 20px;
-  margin-left: 40%;
 `;
 
 const Header = () => {
