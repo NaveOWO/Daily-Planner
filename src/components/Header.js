@@ -5,18 +5,17 @@ const HeaderContainer = styled.section`
   display: flex;
   font-family: "Independence_hall";
   color: white;
-  opacity: 0.8;
 `;
 const Title = styled.h1`
   width: 70%;
-  font-size: 60px;
-  margin: 10px 0 0 10px;
+  font-size: 40px;
+  margin: 30px 0 0 20px;
 `;
 const TodayDate = styled.div`
-  font-size: 50px;
+  font-size: 30px;
   height: 100%;
   width: 30%;
-  margin-top: 20px;
+  margin-top: 40px;
 `;
 
 const Header = () => {
