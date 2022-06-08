@@ -19,11 +19,17 @@ const MemoTitle = styled.h2`
 `;
 
 const MemoContents = styled.input`
+  font-family: "ParkYongJun";
+
   border: none;
   padding: 0;
-  width: 100%;
-  height: 80%;
+  margin-top: 30px;
+  margin-left: 40px;
+  width: 80%;
+  height: 20%;
   background-color: transparent;
+  font-size: 20px;
+  text-align: center;
 `;
 
 const Memo = () => {
