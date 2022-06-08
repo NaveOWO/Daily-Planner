@@ -2,9 +2,13 @@ import styled from "styled-components";
 import React from "react";
 import { useState } from "react";
 
+const StyleRoot = styled.section`
+  background-color: rgb(255, 255, 255, 0.5);
+`;
+
 const ListContainer = styled.div`
-  border: solid 1px black;
   height: 100%;
+  padding: 10px;
 `;
 
 const ListContent = styled.form`
@@ -12,81 +16,132 @@ const ListContent = styled.form`
   font-size: 20px;
   border: none;
   width: 100%;
+  height: 30px;
+  border-bottom: solid 1px black;
 `;
 
 const CategoryInput = styled.input`
   color: black;
+  font-size: 20px;
+  background-color: transparent;
   height: 100%;
   width: 20%;
   border: none;
   padding: 0;
   border-bottom: solid 1px black;
+  font-family: "ParkYongJun";
+  text-align: center;
 `;
 const ListInput = styled.input`
   color: black;
+  background-color: transparent;
   height: 100%;
   border: none;
   width: 70%;
   border-left: solid 1px black;
-  border-bottom: solid 1px black;
-  padding: 0;
+  padding: 0 0 0 10px;
+  font-size: 20px;
+  font-family: "ParkYongJun";
 `;
 
-const SubmitBtn = styled.button`
+const CheckInput = styled.input`
+  background-color: transparent;
+  border: none;
   width: 10%;
   padding: 0;
-  margin: 0;
 `;
 
 const ListTitle = styled.div`
   border-bottom: solid 1px black;
   width: 100%;
   display: flex;
+  text-align: center;
+  color: white;
 `;
 
 const Category = styled.span`
-  color: black;
   width: 20%;
+  font-family: "Independence_hall";
+  font-size: 20px;
 `;
 const Contents = styled.span`
-  color: black;
   border-left: solid 1px black;
   width: 80%;
+  padding: 0 0 0 10px;
+  font-family: "Independence_hall";
+  font-size: 20px;
 `;
 
 const TodoList = () => {
-  const [todoList, setTodoList] = useState([]);
-  const [category, setCategory] = useState([]);
-  const [inputValue, setInputValue] = useState("");
-  const [categoryValue, setCategoryValue] = useState("");
-  const [isChecked, setIsChecked] = useState(false);
-
-  const handleChange = (e) => {
-    setInputValue(e.target.value);
-    setCategoryValue(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setTodoList([...todoList, inputValue]);
-    setCategory([...category, categoryValue]);
-    setIsChecked(true);
-  };
-
   return (
-    <>
+    <StyleRoot>
       <ListContainer>
         <ListTitle>
           <Category>Category</Category>
-          <Contents>Contents</Contents>
+          <Contents>Contents 🗒</Contents>
         </ListTitle>
         <ListContent>
-          <CategoryInput onChange={handleChange} />
-          <ListInput onChange={handleChange} />
-          <SubmitBtn onSubmit={handleSubmit} />
+          <CategoryInput />
+          <ListInput />
+          <CheckInput />
+        </ListContent>
+        <ListContent>
+          <CategoryInput />
+          <ListInput />
+          <CheckInput />
+        </ListContent>
+        <ListContent>
+          <CategoryInput />
+          <ListInput />
+          <CheckInput />
+        </ListContent>
+        <ListContent>
+          <CategoryInput />
+          <ListInput />
+          <CheckInput />
+        </ListContent>
+        <ListContent>
+          <CategoryInput />
+          <ListInput />
+          <CheckInput />
+        </ListContent>
+        <ListContent>
+          <CategoryInput />
+          <ListInput />
+          <CheckInput />
+        </ListContent>
+        <ListContent>
+          <CategoryInput />
+          <ListInput />
+          <CheckInput />
+        </ListContent>
+        <ListContent>
+          <CategoryInput />
+          <ListInput />
+          <CheckInput />
+        </ListContent>
+        <ListContent>
+          <CategoryInput />
+          <ListInput />
+          <CheckInput />
+        </ListContent>
+        <ListContent>
+          <CategoryInput />
+          <ListInput />
+          <CheckInput />
+        </ListContent>
+        <ListContent>
+          <CategoryInput />
+          <ListInput />
+          <CheckInput />
+        </ListContent>
+        <ListContent>
+          <CategoryInput />
+          <ListInput />
+          <CheckInput />
         </ListContent>
       </ListContainer>
-    </>
+    </StyleRoot>
   );
 };
 
