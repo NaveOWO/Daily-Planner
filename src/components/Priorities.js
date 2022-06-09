@@ -77,7 +77,6 @@ const PrioritiesText = styled.div`
 
 const Priorities = () => {
   const [priorityList, setPriorityList] = useState([]);
-  let listCnt = 0;
 
   const clickHandle = () => setPriorityList([...priorityList, ""]);
   return (
