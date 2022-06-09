@@ -31,6 +31,9 @@ const CategoryInput = styled.input`
   border-bottom: solid 1px black;
   font-family: "ParkYongJun";
   text-align: center;
+  &:focus {
+    outline: none;
+  }
 `;
 const ListInput = styled.input`
   color: black;
@@ -42,6 +45,9 @@ const ListInput = styled.input`
   padding: 0 0 0 10px;
   font-size: 20px;
   font-family: "ParkYongJun";
+  &:focus {
+    outline: none;
+  }
 `;
 
 const CheckInput = styled.input`

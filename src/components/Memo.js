@@ -20,7 +20,6 @@ const MemoTitle = styled.h2`
 
 const MemoContents = styled.input`
   font-family: "ParkYongJun";
-
   border: none;
   padding: 0;
   margin-top: 30px;
@@ -30,6 +29,9 @@ const MemoContents = styled.input`
   background-color: transparent;
   font-size: 20px;
   text-align: center;
+  &:focus {
+    outline: none;
+  }
 `;
 
 const Memo = () => {
