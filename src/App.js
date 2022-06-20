@@ -28,6 +28,7 @@ const Rightside = styled.section`
   height: 100%;
   margin: 0;
   padding: 0;
+  margin: 0;
   margin-right: 10px;
   margin-left: 10px;
 `;
